@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Checkout - Gennext</title>
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-XXXXXXX');
+  </script>
+
+  <style>
+    body { font-family: Arial; text-align: center; }
+  </style>
+</head>
+
+<body>
+
+<h1>Checkout 💳</h1>
+
+<p>Enter your details:</p>
+
+<input type="text" placeholder="Name"><br><br>
+<input type="text" placeholder="Address"><br><br>
+
+<button onclick="gtag('event','purchase',{
+  event_category:'ecommerce',
+  event_label:'order_completed'
+}); alert('Order Placed!');">
+  Place Order
+</button>
+
+</body>
+</html>
